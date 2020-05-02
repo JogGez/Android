@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ManageCityCardFragment"
+    android:id="@+id/manageCityCard"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/cardColor4">
+
+        <TextView
+            android:id="@+id/cityTextManageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="5"
+            android:textColor="@color/textColor4"
+            android:textSize="30sp"
+            android:textStyle=""
+            tools:text="@string/testCity" />
+
+        <ImageView
+            android:id="@+id/deleteCityView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="3"
+            android:contentDescription="@string/delCity"
+            tools:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -3,4 +3,19 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="textColor1">#535cd4</color>
+    <color name="cardColor1">#3f24b6</color>
+    <color name="mainBackgroundColor1">#1518b0</color>
+    <color name="TitleBackgroundColor1">#000260</color>
+    <color name="textColor2">#fbd074</color>
+    <color name="cardColor2">#64b48f</color>
+    <color name="mainBackgroundColor2">#358bd8</color>
+    <color name="TitleBackgroundColor2">#1c4875</color>
+    <color name="textColor3">#60493F</color>
+    <color name="cardColor3">#f2f4f3</color>
+    <color name="mainBackgroundColor3">#22333b</color>
+    <color name="TitleBackgroundColor3">#1c4875</color>
+    <color name="textColor4">#97A2FF</color>
+    <color name="cardColor4">#4B5080</color>
+    <color name="BackgroundColor4">#262840</color>
 </resources>

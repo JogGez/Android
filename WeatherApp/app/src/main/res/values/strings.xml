@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">Weather App</string>
+    <string name="app_name">Weather</string>
+
+    <string name="addCity">Add City</string>
+    <string name="citySearch">Search</string>
+    <string name="enterCityName">Enter city</string>
+    <string name="testCity">Odense, DK</string>
+    <string name="testTemp1">13°</string>
+    <string name="testTemp2">21° C</string>
+    <string name="testDay">Day</string>
+    <string name="testDescription">Partly Cloudy</string>
+    <string name="manageCity">Manage Cities</string>
+    <string name="weatherIcon">Weather Icon</string>
+    <string name="Monday">Mon</string>
+    <string name="Thursday">Thu</string>
+    <string name="Friday">Fri</string>
+    <string name="Saturday">Sat</string>
+    <string name="Sunday">Sun</string>
+    <string name="Wednesday">Wed</string>
+    <string name="Tuesday">Tue</string>
+    <string name="Humidity">Humidity</string>
+    <string name="Wind">Wind</string>
+    <string name="Pressure">Pressure</string>
+    <string name="testHumid">99%</string>
+    <string name="testWind">4 m/s</string>
+    <string name="Cloud">Cloudiness</string>
+    <string name="testCloud">0%</string>
+    <string name="testPres">1008 hPa</string>
+    <string name="delCity">Delete City</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
