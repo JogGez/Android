@@ -1,4 +1,4 @@
-package com.androdocs.weatherapp;
+package com.androdocs.weatherapp.Fragments;
 
 import android.os.Bundle;
 
@@ -7,14 +7,22 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.androdocs.weatherapp.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link WeatherCardFragment#newInstance} factory method to
+ * Use the {@link CityWeatherFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class WeatherCardFragment extends Fragment {
+public class CityWeatherFragment extends Fragment {
+
+    View view;
+    ImageView delete;
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -24,7 +32,7 @@ public class WeatherCardFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public WeatherCardFragment() {
+    public CityWeatherFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +42,11 @@ public class WeatherCardFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment WeatherCardFragment.
+     * @return A new instance of fragment CityWeatherFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static WeatherCardFragment newInstance(String param1, String param2) {
-        WeatherCardFragment fragment = new WeatherCardFragment();
+    public static CityWeatherFragment newInstance(String param1, String param2) {
+        CityWeatherFragment fragment = new CityWeatherFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +67,20 @@ public class WeatherCardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_weather_card, container, false);
+        view = inflater.inflate(R.layout.fragment_city_weather, container, false);
+
+        delete = view.findViewById(R.id.deleteView);
+        delete.setImageDrawable(getResources().getDrawable(R.drawable.ic_delete_black_24dp));
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO
+            }
+        });
+
+        return view;
+    }
+    public void updateCityView(String City){
+
     }
 }

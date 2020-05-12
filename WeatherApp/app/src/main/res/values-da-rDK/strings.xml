@@ -10,15 +10,7 @@
     <string name="testTemp2">21° C</string>
     <string name="testDay">Dag</string>
     <string name="testDescription">Delvis Skyet</string>
-    <string name="manageCity">Administer Byer</string>
     <string name="weatherIcon">Vejr Ikon</string>
-    <string name="Monday">Man</string>
-    <string name="Thursday">Tors</string>
-    <string name="Friday">Fre</string>
-    <string name="Saturday">Lør</string>
-    <string name="Sunday">Søn</string>
-    <string name="Wednesday">Ons</string>
-    <string name="Tuesday">Tirs</string>
     <string name="Humidity">Luftfugtighed</string>
     <string name="Wind">Vind</string>
     <string name="Pressure">Lufttruk</string>
