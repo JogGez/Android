@@ -7,11 +7,16 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.room.Room;
 
 import com.androdocs.weatherapp.Activities.AddCityActivity;
 import com.androdocs.weatherapp.Fragments.CityWeatherFragment;
 import com.androdocs.weatherapp.Interface.ItemClicked;
 import com.androdocs.weatherapp.R;
+import com.androdocs.weatherapp.RoomDatabase.AppDatabase;
+import com.androdocs.weatherapp.RoomDatabase.WeatherCardEntity;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements ItemClicked {
 
@@ -34,7 +39,12 @@ public class MainActivity extends AppCompatActivity implements ItemClicked {
             }
         });
 
-
+        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
+                AppDatabase.class,
+                "production")
+                .allowMainThreadQueries() // maybe wrap in another thread later
+                .build();
+        List<WeatherCardEntity> weatherCardEntities = db.weatherCardDAO().getAllWeatherCardEntities();
 
     }
 
