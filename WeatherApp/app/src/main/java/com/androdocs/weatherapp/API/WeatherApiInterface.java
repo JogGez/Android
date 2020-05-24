@@ -10,7 +10,7 @@ public interface WeatherApiInterface {
     @GET("forecast")
     Call<ResponseBody> queryWeatherData(
             @Query("q") String city,
-            @Query("APPID")String key,
+            @Query("APPID") String key,
             @Query("units") String units,
             @Query("cnt") int days
             );
